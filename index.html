@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GM SANITARY FITTINGS</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+<div class="logo">
+
+<h1>🚿 GM SANITARY FITTINGS</h1>
+
+<p>Quality Kitchen & Bathroom Accessories</p>
+
+</div>
+
+<div class="header-right">
+
+<input
+type="text"
+id="search"
+placeholder="🔍 Search Products..."
+>
+
+<button onclick="toggleDarkMode()">🌙</button>
+
+<div class="wishlist-icon">
+
+❤️ <span id="wishlist-count">0</span>
+
+</div>
+
+<div class="cart-icon">
+
+🛒 <span id="cart-count">0</span>
+
+</div>
+
+</div>
+
+</header>
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<button onclick="filterProducts('all')">
+
+All
+
+</button>
+
+<button onclick="filterProducts('Kitchen Sink')">
+
+Kitchen Sink
+
+</button>
+
+<button onclick="filterProducts('Tap')">
+
+Tap
+
+</button>
+
+<button onclick="filterProducts('Bathroom')">
+
+Bathroom
+
+</button>
+
+<button onclick="filterProducts('Accessories')">
+
+Accessories
+
+</button>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+<h2>
+
+Welcome To
+
+GM SANITARY FITTINGS
+
+</h2>
+<div class="hero-features">
+
+    <div>✅ Premium Quality</div>
+
+    <div>🚚 Fast Delivery</div>
+
+    <div>💯 Best Price</div>
+
+    <div>🛡️ Trusted Products</div>
+
+</div>
+<p>
+
+Premium Kitchen & Bathroom Accessories
+
+</p>
+
+<button
+onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+
+Shop Now
+<a href="https://wa.me/923482277031" target="_blank">
+    <button class="whatsapp-btn">📱 WhatsApp Order</button>
+</a>
+</button>
+
+</section>
+
+<!-- IMAGE SLIDER -->
+
+<div class="slider-box">
+
+<img
+id="slider"
+src="images/5040H.M.jpg"
+alt="Slider">
+
+</div>
+
+<!-- PRODUCTS START -->
+
+<div
+class="products"
+id="products">
+  <!-- Product 1 -->
+
+<div class="product" data-category="Kitchen Sink">
+
+<span class="sale-badge">20% OFF</span>
+
+<img src="images/5040H.M.jpg"
+alt="5040 HM"
+onclick="showDetails('Kitchen Sink 5040 HM',3900,'images/5040H.M.jpg','Premium Stainless Steel Kitchen Sink 5040 HM.')">
+
+<h3>Kitchen Sink 5040 HM</h3>
+
+<p>Rs.3900</p>
+<div class="rating">
+⭐⭐⭐⭐⭐
+<span>(5.0)</span>
+</div>
+<p class="stock">✅ In Stock</p>
+
+<button onclick="addToCart('Kitchen Sink 5040 HM',3900)">🛒 Add To Cart</button>
+
+<button onclick="addToWishlist('Kitchen Sink 5040 HM')">❤️ Wishlist</button>
+<button onclick="shareProduct('Kitchen Sink 5040 HM',3900)">
+📤 Share
+</button>
+</div>
+
+<!-- Product 2 -->
+
+<div class="product" data-category="Kitchen Sink">
+
+<span class="sale-badge">20% OFF</span>
+
+<img src="images/6045 H.M.jpg"
+alt="6045 HM"
+onclick="showDetails('Kitchen Sink 6045 HM',4000,'images/6045 H.M.jpg','Premium Stainless Steel Kitchen Sink 6045 HM.')">
+
+<h3>Kitchen Sink 6045 HM</h3>
+
+<p>Rs.4000</p>
+<div class="rating">
+⭐⭐⭐⭐⭐
+<span>(5.0)</span>
+</div>
+<p class="stock">✅ In Stock</p>
+
+<button onclick="addToCart('Kitchen Sink 6045 HM',4000)">🛒 Add To Cart</button>
+
+<button onclick="addToWishlist('Kitchen Sink 6045 HM')">❤️ Wishlist</button>
+<button onclick="shareProduct('Kitchen Sink 6045 HM',4000)">
+📤 Share
+</button>
+</div>
+
+<!-- Product 3 -->
+
+<div class="product" data-category="Kitchen Sink">
+
+<span class="sale-badge">20% OFF</span>
+
+<img src="images/6845H.M.jpg"
+alt="6845 HM"
+onclick="showDetails('Kitchen Sink 6845 HM',4500,'images/6845H.M.jpg','Premium Stainless Steel Kitchen Sink 6845 HM.')">
+
+<h3>Kitchen Sink 6845 HM</h3>
+
+<p>Rs.4500</p>
+<div class="rating">
+⭐⭐⭐⭐⭐
+<span>(5.0)</span>
+</div>
+<p class="stock">✅ In Stock</p>
+
+<button onclick="addToCart('Kitchen Sink 6845 HM',4500)">🛒 Add To Cart</button>
+
+<button onclick="addToWishlist('Kitchen Sink 6845 HM')">❤️ Wishlist</button>
+<button onclick="shareProduct('Kitchen Sink 6845 HM',4500)">
+📤 Share
+</button>
+</div>
+
+<!-- Product 4 -->
+
+<div class="product" data-category="Kitchen Sink">
+
+<span class="sale-badge">20% OFF</span>
+
+<img src="images/7843H.M.jpg"
+alt="7843 HM"
+onclick="showDetails('Kitchen Sink 7843 HM',6800,'images/7843H.M.jpg','Premium Stainless Steel Kitchen Sink 7843 HM.')">
+
+<h3>Kitchen Sink 7843 HM</h3>
+
+<p>Rs.6800</p>
+<div class="rating">
+⭐⭐⭐⭐⭐
+<span>(5.0)</span>
+</div>
+<p class="stock">✅ In Stock</p>
+
+<button onclick="addToCart('Kitchen Sink 7843 HM',6800)">🛒 Add To Cart</button>
+
+<button onclick="addToWishlist('Kitchen Sink 7843 HM')">❤️ Wishlist</button>
+
+</div>
+
+<!-- Product 5 -->
+
+<div class="product" data-category="Kitchen Sink">
+
+<span class="sale-badge">20% OFF</span>
+
+<img src="images/8245H.M.jpg"
+alt="8245 HM"
+onclick="showDetails('Kitchen Sink 8245 HM',7000,'images/8245H.M.jpg','Premium Stainless Steel Kitchen Sink 8245 HM.')">
+
+<h3>Kitchen Sink 8245 HM</h3>
+
+<p>Rs.7000</p>
+<div class="rating">
+⭐⭐⭐⭐⭐
+<span>(5.0)</span>
+</div>
+<p class="stock">✅ In Stock</p>
+
+<button onclick="addToCart('Kitchen Sink 8245 HM',7000)">🛒 Add To Cart</button>
+
+<button onclick="addToWishlist('Kitchen Sink 8245 HM')">❤️ Wishlist</button>
+<button onclick="shareProduct('Kitchen Sink 8245 HM',7000)">
+📤 Share
+</button>
+</div>
+<!-- Product 6 -->
+
+<div class="product" data-category="Tap">
+
+<img src="images/Flexible Tap.jpg"
+alt="Flexible Tap"
+onclick="showDetails('Flexible Tap',1200,'images/Flexible Tap.jpg','Premium Flexible Tap with 360° rotation.')">
+
+<h3>Flexible Tap</h3>
+
+<p>Rs.1200</p>
+<div class="rating">
+⭐⭐⭐⭐⭐
+<span>(5.0)</span>
+</div>
+<p class="stock">✅ In Stock</p>
+
+<button onclick="addToCart('Flexible Tap',1200)">🛒 Add To Cart</button>
+
+<button onclick="addToWishlist('Flexible Tap')">❤️ Wishlist</button>
+<button onclick="shareProduct('Flexible Tap',1200)">
+📤 Share
+</button>
+</div>
+
+<!-- Product 7 -->
+
+<div class="product" data-category="Bathroom">
+
+<img src="images/Turky Toty.jpg"
+alt="Turkey Toty"
+onclick="showDetails('Turkey Toty',1800,'images/Turky Toty.jpg','Premium Turkey Toty.')">
+
+<h3>Turkey Toty</h3>
+
+<p>Rs.1800</p>
+<div class="rating">
+⭐⭐⭐⭐⭐
+<span>(5.0)</span>
+</div>
+<p class="stock">✅ In Stock</p>
+
+<button onclick="addToCart('Turkey Toty',1800)">🛒 Add To Cart</button>
+<button onclick="shareProduct('Turkey Toty',1800)">
+📤 Share
+</button>
+<button onclick="addToWishlist('Turkey Toty')">❤️ Wishlist</button>
+
+</div>
+
+<!-- Product 8 -->
+
+<div class="product" data-category="Bathroom">
+
+<img src="images/Color shower nek.jpg"
+alt="Color Shower Neck"
+onclick="showDetails('Color Shower Neck',1500,'images/Color shower nek.jpg','Premium Color Shower Neck.')">
+
+<h3>Color Shower Neck</h3>
+
+<p>Rs.1500</p>
+<div class="rating">
+⭐⭐⭐⭐⭐
+<span>(5.0)</span>
+</div>
+<p class="stock">✅ In Stock</p>
+
+<button onclick="addToCart('Color Shower Neck',1500)">🛒 Add To Cart</button>
+
+<button onclick="addToWishlist('Color Shower Neck')">❤️ Wishlist</button>
+<button onclick="shareProduct('Color Shower Neck',1500)">
+📤 Share
+</button>
+</div>
+
+<!-- Product 9 -->
+
+<div class="product" data-category="Accessories">
+
+<img src="images/kitchen Rank.jpg"
+alt="Kitchen Rack"
+onclick="showDetails('Kitchen Rack',2500,'images/kitchen Rank.jpg','Premium Kitchen Rack.')">
+
+<h3>Kitchen Rack</h3>
+
+<p>Rs.2500</p>
+<div class="rating">
+⭐⭐⭐⭐⭐
+<span>(5.0)</span>
+</div>
+<p class="stock">✅ In Stock</p>
+
+<button onclick="addToCart('Kitchen Rack',2500)">🛒 Add To Cart</button>
+
+<button onclick="addToWishlist('Kitchen Rack')">❤️ Wishlist</button>
+<button onclick="shareProduct('Kitchen Rack',2500)">
+📤 Share
+</button>
+</div>
+
+</div>
+<section class="contact-section">
+
+<h2>📞 Contact Us</h2>
+
+<p><strong>GM SANITARY FITTINGS</strong></p>
+
+<p>📱 +92 348 2277031</p>
+
+<p>📧 gmsanitaryfittings@gmail.com</p>
+
+<p>📍 Gujranwala, Pakistan</p>
+
+<a href="https://wa.me/923482277031" target="_blank">
+<button class="contact-btn">WhatsApp Now</button>
+</a>
+
+</section>
+<footer class="footer">
+
+<h2>GM SANITARY FITTINGS</h2>
+
+<p>📞 +92 348 2277031</p>
+
+<p>📧 gmsanitaryfittings@gmail.com</p>
+
+<p>© 2026 GM Sanitary Fittings</p>
+<button class="invoice-btn" onclick="printInvoice()">
+🧾 Print Invoice
+</button>
+<section class="reviews">
+
+<h2>⭐ Customer Reviews</h2>
+
+<div class="review-card">
+<h3>Ali Ahmed</h3>
+<p>⭐⭐⭐⭐⭐</p>
+<p>Excellent Quality. Highly Recommended.</p>
+</div>
+
+<div class="review-card">
+<h3>Muhammad Usman</h3>
+<p>⭐⭐⭐⭐⭐</p>
+<p>Fast Delivery & Premium Products.</p>
+</div>
+
+<div class="review-card">
+<h3>Bilal</h3>
+<p>⭐⭐⭐⭐⭐</p>
+<p>Best Sanitary Shop in Pakistan.</p>
+</div>
+
+</section>
+</footer>
+<!-- CART PANEL -->
+
+<div id="cart-panel" class="cart-panel">
+
+<h2>🛒 Shopping Cart</h2>
+
+<div id="cart-items"></div>
+
+<h3>Total: Rs. <span id="cart-total">0</span></h3>
+
+<button onclick="checkoutWhatsApp()">
+📱 Order on WhatsApp
+</button>
+
+</div>
+<div id="product-details" class="product-details">
+
+<div class="details-box">
+
+<span class="close" onclick="closeDetails()">&times;</span>
+
+<img id="details-img">
+
+<h2 id="details-name"></h2>
+
+<p id="details-price"></p>
+
+<p id="details-description"></p>
+
+<button id="details-cart">🛒 Add To Cart</button>
+
+<a id="details-whatsapp" target="_blank">
+
+<button>📱 WhatsApp Order</button>
+
+</a>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+<!-- Floating Call Button -->
+<a href="tel:+923482277031" class="call-float">
+    📞
+</a>
+
+<!-- Back To Top Button -->
+<button id="topBtn" onclick="topFunction()">
+⬆️
+</button>
+<!-- Image Preview -->
+<div id="imageViewer" class="image-viewer" onclick="closeImage()">
+    <img id="previewImage" src="" alt="Preview">
+</div>
+</body>
+</html>

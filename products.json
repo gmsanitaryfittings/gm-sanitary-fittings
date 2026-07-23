@@ -1,0 +1,23 @@
+[
+  {
+    "name": "Kitchen Sink 5040 HM",
+    "price": 3900,
+    "category": "Kitchen Sink",
+    "image": "images/5040H.M.jpg",
+    "description": "Premium Stainless Steel Kitchen Sink 5040 HM."
+  },
+  {
+    "name": "Kitchen Sink 6045 HM",
+    "price": 4000,
+    "category": "Kitchen Sink",
+    "image": "images/6045 H.M.jpg",
+    "description": "Premium Stainless Steel Kitchen Sink 6045 HM."
+  },
+  {
+    "name": "Kitchen Sink 6845 HM",
+    "price": 4500,
+    "category": "Kitchen Sink",
+    "image": "images/6845H.M.jpg",
+    "description": "Premium Stainless Steel Kitchen Sink 6845 HM."
+  }
+]
